@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/images/favicon-32x32.png" type="image/x-icon">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>FEM | Contact Form</title>
+</head>
+<body>
+    <main>
+        <form id="contact-form" class="form grid">
+            <h1 class="form__title">Contact Us</h1>
+
+            <div class="span-2 sub-grid">
+                <div class="label-group">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name">
+                    <p class="error-message">This field is required</p>
+                </div>
+
+                <div class="label-group">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name">
+                    <p class="error-message">This field is required</p>
+                </div>
+            </div>
+
+            <div class="label-group span-2">
+                <label for="email">Email Address</label>
+                <input type="email" id="email">
+                <p class="error-message">Please enter a valid email address</p>
+            </div>
+
+            <div class="label-group span-2">
+                <label class="query__heading" for="query" id="radios">Query Type</label>
+
+                <div class="span-2 sub-grid">
+                    <label for="general">
+                        <input type="radio" name="query" id="general">
+                        General Enquiry
+                    </label>
+
+                    <label for="support">
+                        <input type="radio" name="query" id="support">
+                        Support Request
+                    </label>
+                </div>
+
+                <p class="error-message">Please select a query</p>
+            </div>
+
+            <div class="label-group span-2">
+                <label for="message">Message</label>
+                <textarea id="message"></textarea>
+                <p class="error-message">This field is required</p>
+            </div>
+
+            <div class="span-2">
+                <div class=" label-group consent">
+                    <input type="checkbox" id="consent">
+                    <label for="consent">I consent to being contacted by the team</label>
+                </div>
+                <p class="error-message">To submit this form, please consent to being contacted</p>
+            </div>
+
+            <button type="submit" class="submit-btn span-2">Submit</button>
+        </form>
+    </main>
+</body>
+</html>
